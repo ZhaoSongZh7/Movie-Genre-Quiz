@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f25050;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    z-index: 200; 
+  }
+  
+  .welcome-text {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .quiz-form {
+    position: absolute;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .name-flex {
+    color: black;
+  }
+  
+  label, input {
+    margin-bottom: 10px;
+  }
+  
+  #name-label, #age-label{
+    display: block;
+    color: black;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .question, .response, .response-text {
+    color: black;
+  }
+  
+  .question-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  .response-container {
+    display: flex;
+  }
+  
+  .response-text {
+    margin-left: 10px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    transition: background-color 0.15s, border 0.15s;
+    font-family: 'Roboto Slab', serif;  
+  }
+  
+  .submit-button:hover {
+    background-color: #d6d6d6;
+    border: 2px solid #707070;  
+  }
+  
+  .title-portion {
+    transition: font-size 0.15s;
+    animation: 6s ease-in alternate infinite rainbowFlow;
+  }
+  
+  .title-portion:hover {
+    font-size: 50px;
+  }
+  
+  .quiz-title-portion {
+    transition: font-size 0.15s;
+  }
+  
+  .quiz-title-portion:hover {
+    font-size: 50px;
+  }
+  
+  .genre-image {
+    width: 550px;
+    height: 350px;
+  }
+  
+  .reset-button {
+    padding: 5px 10px 5px 10px;
+    border: 2px solid black;
+    background-color: white;
+    transition: background-color 0.15s, border 0.15s;
+    font-family: 'Roboto Slab', serif;  
+    margin-bottom: 20px;
+  }
+  
+  .reset-button:hover {
+    color: white;
+    background-color: #f34949;
+    border: 2px solid #707070;  
+  }
+  
+  .result {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  @keyframes rainbowFlow {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+  }
+  
